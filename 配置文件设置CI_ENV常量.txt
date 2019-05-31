@@ -1,0 +1,13 @@
+18588209925
+人力资源相关制度已上传至共享IP，查看路径为：\\192.168.61.65\Users\人力资源管理制度，请大家查阅，谢谢！
+共享电脑IP：\\192.168.61.65  用户名：printer  密码：dzzj
+
+
+
+httpd.conf
+设置常量【CI_ENV】的值：
+----------------
+#<IfModule mod_env.c>
+#    SetEnv CI_ENV development
+#</IfModule>
+----------------
