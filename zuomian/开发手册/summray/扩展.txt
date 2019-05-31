@@ -1,0 +1,58 @@
+js
+脚本框架 	jquery angular.js vue.js ext.js
+UI框架 		bootstrap amazeUI weUI flatUI
+composer  	镜像（Mirroring）
+	安装完成之后 修改为国内镜像
+        composer config -g repo.packagist composer https://packagist.phpcomposer.com
+	 三个网站：
+        https://pkg.phpcomposer.com/        中国镜像网
+        GitHub                              全球最大的项目托管网站
+        https://packagist.org/              安装包列表
+
+    composer.json
+        配置文件 
+    composer.lock
+        当更新后 就会生成这个文件 下次在执行 composer install  就会先读取 composer.lock 如果说要更新 请使用 composer update
+    声明依赖
+        写在require规则里
+            "require": {
+                "monolog/monolog": "^1.23",
+                "curl/curl": "*",
+                "voku/simple-mysqli": "5.*"
+            },
+
+反射
+PDO
+微信
+git
+tp5
+tp 3.2.3
+RESTful    流行的一种接口风格 不是一个标准
+    一种软件架构风格，设计风格而不是标准，只是提供了一组设计原则和约束条件。它主要用于客户端和服务器交互类的软件。基于这个风格设计的软件可以更简洁，更有层次，更易于实现缓存等机制。
+	
+interface
+	就是别人发送请求给我们 我们返回信息
+
+    客户端（浏览器，能发起http请求的任何玩意 curl ajax、桌面上的软件）
+
+    服务端（接口） 返回跟客户端商量好的数据
+
+    1、定义好客户端与服务器发送数据和接受数据的格式 （json、xml）
+    2、确定服务器返回信息的地址
+    3、需要一些认证，验证一下客户端是不是我信任的客户端 （appid appsecret）
+    4、token就是客户端第一次请求数据的时候 我们给他生成token，token有个有效期，在有效期之内客户端都可以用这个token来请求数据， 如果过期了 就重发起认证
+
+	git Linux Git
+	
+		集中式版本控制 
+			SVN
+			CVS
+		BitKeeper  商业的分布式版本控制系统
+		
+常用的Git网站
+	GitHub  Coding 码云
+	
+分布式：操作区 暂存区 版本区
+
+在线画图：流程图  processOn
+思维导图：xmind

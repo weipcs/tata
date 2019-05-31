@@ -1,0 +1,13 @@
+【git】git add 添加错文件 撤销：
+git status 先看一下add 中的文件 
+git reset HEAD 如果后面什么都不跟的话 就是上一次add 里面的全部撤销了 
+git reset HEAD XXX/XXX/XXX.java 就是对某个文件进行撤销了
+
+
+提示设置-》提示配置
+日志系统-》查看日志
+站点信息-》网站SEO信息
+
+网站配置-》审核配置/样品配置
+
+redirect(site_url('jzic_cms_controllers/administrators/log_in'));
