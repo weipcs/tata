@@ -1,0 +1,40 @@
+# 报价
+# 询价
+-- IF( ( GI.group_schedule=1 OR (GI.group_schedule=2 AND GI.end_time>now()) ), GS.sale_stock, GI.group_qty) as sale_stock
+
+				vd($last_query = $this->db->last_query());
+
+
+application/views/supplier/create_supplier_brand_agent.php
+$this->db->count_all_results('ic_admin');
+
+$this->db->select('A.*,nickname,C.coupon_type_name');
+$this->db->from('ic_coupon_info AS A');
+$this->db->join('ic_admin AS B','A.admin_id = B.id','left');
+$this->db->join('ic_coupon_type AS C','A.coupon_type_id = C.coupon_type_id','left');
+$this->db->order_by('A.coupon_info_id','desc');
+$query = $this->db->get();
+$this->data = $query->result_array();
+
+
+
+$bind_menber_id = $this->get_admin_bind_menber_id();
+$limit = empty($this->uri->segment('3')) ? 0 : $this->uri->segment('3');
+$this->db->select('B.username,A.*,C.nickname as admin_username');
+$this->db->from('ic_invoice_info as A');
+$this->db->join('ic_menbers AS B', 'B.id = A.uid', 'left');
+$this->db->join('ic_admin as C', 'C.id = A.shenhe_id', 'left');
+$this->db->join('ic_menber_company_info as D', 'A.uid = D.uid', 'left');
+$this->result_num = $this->db->count_all_results('', false);
+$this->db->limit($this->config->item('show_page_number'), $limit);
+$this->db->order_by('add_time', 'desc');
+$query = $this->db->get();
+$data = $query->result_array();
+
+$this->db->select('m.id,m.add_time,cn.cn_name,a.username as bind_admin');
+$this->db->from('ic_menbers as m');
+$this->db->join('ic_menber_company_info as cn','m.id = cn.uid','left');
+$this->db->join('ic_admin as a','m.kefu_admin_id=a.id','left');
+$this->db->order_by('m.add_time','desc');
+$query = $this->db->get();
+$list = $query->result_array();
