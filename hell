@@ -1,73 +1,9 @@
-版本控制入门：
-1-1
-课程介绍：
-github.com/happypeter
 
-博客地址：https://logan70.github.io/
-源码：https://github.com/logan70/logan70.github.io
-
-
-1-2
-浏览器使用github
-git命令：https://github.com/CruxF/Blog/issues/1
-
-3-1 github客户端的使用
-mac端：mac.github.com
-windows端：windows.github.com
-
-changes 修改过的文件
-history 历史提交过的记录
-Undo 	还原上次提交的记录（撤销）只适合没有同步的版本操作（么有同步到github网站上）
-
-Summary(required) 提交(commit)的备注
-Description 备注详情
-Commit to master  提交
-Roll Back to this Commit 回滚到指定的版本
-
-推荐《Git Pro 2nd Edition》、《Version Control with Git, 2nd Edition》
-
-在history中，选中版本，右键->【revert this commit】，还原上一一个版本
+10-1 github 秘密机关
 
 
 
-add为添加本地的项目，create是创建一个新项目，clone为把repository的项目下载到本地
-
-changes为被修改的文件，可以勾选被修改的文件是否被做到下一个版本中，同时会显示修改内容，默认选定文件后修改都会做到版本中，点击修改的序号，取消选中则不会做到新版本中
-
-changes处下方可以添加版本留言，然后把提交做到master分支上
-
-
-1，提交但是没有同步到Github时撤销的方法:undo。
-2，提交之后撤销的方法： revert this commit。
-3，回滚到某一版本的方法：roll back to this commit。
-
-
-1、change:修改标签的内容。 
-2、右侧显示是改变的内容，【蓝色】代表选中要提交的内容，如果说暂时不提交的话 就不选中变成 【淡蓝色】
-3、左下角的是，提交版本的标记
-4、undo:修改(撤销)版本；只适合没有同步到GitHub的版本(本地)；
-5、回滚到某个历史版本
-
-GitHub客户端下载地址：https://windows.github.com/
-下载安装报错，在IE下安装：https://github-windows.s3.amazonaws.com/GitHub.application
 
 
 
-Revert this commit:撤销此次的同步；
-roll back to this commit:全部撤销，删去版本；
 
-
-
-https://www.cnblogs.com/foreveryt/p/4077380.html
-http://www.ihref.com/read-16514.html
-
-https://gitee.com/
-https://blog.csdn.net/u014294166/article/details/51749852
-https://pan.baidu.com/s/1c1NiiCK#list/path=%2F
-https://github.com/logan70/logan70.github.io
-https://logan70.github.io/
-https://desktop.github.com/
-https://www.zhihu.com/question/21623581/answer/67127382
-https://www.zhihu.com/question/23110947
-https://blog.csdn.net/fybon/article/details/52460516
-http://www.ruanyifeng.com/blog/2014/05/restful_api.html
