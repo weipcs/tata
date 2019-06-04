@@ -173,5 +173,17 @@ git pull
 
 ### 3-1 远程仓库
 ```
+推送到远程仓库分为2种。1：本地仓库推送到远程仓库：git remote add origin git@github.com## git@github.com:这个链接复制自己的使用，不然会关联到别人的仓库。后面使用 git push 提交到远程仓库即可。2：关联远程仓库，然后推送到远程仓库：git clone git@github.com## git@github.com: 这个链接是你远程仓库的地址。建立链接了，可以提交到远程仓库了。
 
+
+ssh-keygen -t rsa -C "注册的邮箱"
+ssh -T git@github.com 判断本地仓库和远程仓库是否连通
+git remote add origin git@github.com:lswcc/lsw.git "添加远程仓库"
+git push -u origin master "第一次连接远程仓库推送"
+git pull origin <分支名> "把远程分支拉取回来到本地，同时把本地代码和远程更新到一致"
+```
+
+### 3-1 克隆
+```
+新版的sourceTree的Clone/New图标没有显示在工具栏上，需要通过File--> Clone/New...来加载
 ```
