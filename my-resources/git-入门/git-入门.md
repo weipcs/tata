@@ -154,11 +154,32 @@ git pull
 ssh-keygen -t rsa -C "注册的邮箱"
 ssh -T git@github.com 判断本地仓库和远程仓库是否连通
 git remote add origin git@github.com:lswcc/lsw.git "添加远程仓库"
-git push -u origin master "第一次连接远程仓库推送"
+git push -u origin master "第一次连接远程仓库推送" 
+git push -u origin master --allow-unrelated-histories
 git pull origin <分支名> "把远程分支拉取回来到本地，同时把本地代码和远程更新到一致"
+
+图形化界面：
+1. 新建本地仓库
+2. 在本地添加文件->暂存区->本地仓库
+3. 右击master分支->创建拉取请求->添加远程仓库->远端名称：默认是origin，url/路径：github的项目路径，用户名：之前设置的用户名（这里可以重新设置）
 ```
 
-### 3-1 克隆
+### 3-2 克隆仓库
 ```
 新版的sourceTree的Clone/New图标没有显示在工具栏上，需要通过File--> Clone/New...来加载
+```
+
+### 3-2 标签管理
+```
+git tag # 查看所有标签
+git tag name # 创建标签
+git tag -a name -m 'comment' # 指定提交信息
+git tag -d name # 删除标签
+git push origin name # 标签发布 
+```
+### 3-4 分支管理
+```
+```
+### 4-1 课程总结
+```
 ```
